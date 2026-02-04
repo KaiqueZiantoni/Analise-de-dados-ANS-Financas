@@ -16,11 +16,10 @@ Trade Off - estarão disponíveis e numerados de acordo com cada desafio ao fina
 # Clone o repositório
 
 
-git clone
-[git@github.com:KaiqueZiantoni/Analise-de-dados-ANS-Financas.git](git@github.com:KaiqueZiantoni/Analise-de-dados-ANS-Financas.git)
+    git clone [git@github.com:KaiqueZiantoni/Analise-de-dados-ANS-Financas.git](git@github.com:KaiqueZiantoni/Analise-de-dados-ANS-Financas.git)
 
 
-cd Analise-de-dados-ANS-Financas
+    cd Analise-de-dados-ANS-Financas
 
 
 ## Inicie o seu Ambiente Virtual (VENV):
@@ -29,19 +28,24 @@ cd Analise-de-dados-ANS-Financas
 **1. Crie o ambiente virtual:**
 
 
- python -m venv venv
+    python -m venv venv
 
 
 **2. Ative seu ambiente virtual:**
 
 
-source venv/bin/activate (##Linux // Mac##)
+    source venv/bin/activate 
+    
+    (##Linux // Mac##)
 
 
     ou
 
 
-venv\Scripts\activate (## Windows ##)
+    venv\Scripts\activate 
+    
+    
+    (## Windows ##)
 
 
 **3. Instale todas as dependências necessárias:**
@@ -64,7 +68,7 @@ Após realizar o passo 1 (instalação dos pré requisitos)-->- [Clone o reposit
 
 Rodando as pastas por ordem de exercícios, iniciando nessa sequência:
 1.“script_ex1”					     	      
-- ./script_ex1/ex1_1.py 
+    - python3 ./script_ex1/ex1_1.py 
 - ./script_ex1/ex1_2.py    
 - ./script_ex1/ex1_3.py
 

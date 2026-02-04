@@ -5,7 +5,7 @@ import os
 
 ARQUIVO_CONTABIL = 'dados_consolidados.csv'
 ARQUIVO_CADASTRO = 'Relatorio_Cadop.csv' 
-ARQUIVO_SAIDA_ZIP = 'consolidado_despesas.zip'
+ARQUIVO_SAIDA_ZIP = 'output/consolidado_despesas.zip'
 NOME_CSV_INTERNO = 'consolidado_despesas.csv'
 
 
