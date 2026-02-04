@@ -36,22 +36,22 @@ Trade Off - estarão disponíveis e numerados de acordo com cada desafio ao fina
 
     source venv/bin/activate 
     
-    (##Linux // Mac##)
+(##Linux // Mac##)
 
 
-    ou
+ou
 
 
     venv\Scripts\activate 
     
     
-    (## Windows ##)
+(## Windows ##)
 
 
 **3. Instale todas as dependências necessárias:**
 
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 
 ## Iniciando o projeto 
@@ -60,26 +60,16 @@ pip install -r requirements.txt
 Após realizar o passo 1 (instalação dos pré requisitos)-->- [Clone o repositório](#clone-o-repositório)
 
 
-**Existem 2 opções de realização de inicialização**
+**Inicialização**
 
 
-1ª → O projeto pode ser iniciado por partes:
+Rode  o arquivo
 
 
-Rodando as pastas por ordem de exercícios, iniciando nessa sequência:
-1.“script_ex1”					     	      
-    - python3 ./script_ex1/ex1_1.py 
-- ./script_ex1/ex1_2.py    
-- ./script_ex1/ex1_3.py
+    python3 main.py  
+     
+presente na raiz do projeto 
 
-2.“script_ex2”
-- ./script_ex2/ex2_1.py 
-- ./script_ex2/ex2_2.py    
-- ./script_ex2/ex2_3.py
-
-
-2ª →Rodando diretamente o arquivo MAIN.PY presente na raiz do projeto 
-(este arquivo serve para juntar todas as etapas anteriores em apenas um, facilitando sua utilização) 
 
 
 ## Criar tabelas de banco de dados:
@@ -114,7 +104,13 @@ Verifique a conexão no arquivo **ex4_1.py** (dentro da pasta script_ex4)
 
 # Inicie o servidor:
 
-No diretório script_ex4 execute o comando
+No diretório 
+
+
+    script_ex4 
+    
+    
+execute o comando
 
 
      uvicorn ex4_1:app --reload
