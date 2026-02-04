@@ -34,24 +34,30 @@ Trade Off - estarão disponíveis e numerados de acordo com cada desafio ao fina
 **2. Ative seu ambiente virtual:**
 
 
+(##Linux // Mac##)
+
+
     source venv/bin/activate 
     
-(##Linux // Mac##)
+
 
 
 ou
 
 
+(## Windows ##)
+
+
     venv\Scripts\activate 
     
     
-(## Windows ##)
+
 
 
 **3. Instale todas as dependências necessárias:**
 
 
-    pip install -r requirements.txt
+    pip install -r .\requirements\requirements.txt
 
 
 ## Iniciando o projeto 
