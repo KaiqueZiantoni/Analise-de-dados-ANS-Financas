@@ -38,7 +38,7 @@ cd Analise-de-dados-ANS-Financas
 source venv/bin/activate (##Linux // Mac##)
 
 
-	ou
+    ou
 
 
 venv\Scripts\activate (## Windows ##)
@@ -64,16 +64,17 @@ Após realizar o passo 1 (instalação dos pré requisitos)-->- [Clone o reposit
 
 Rodando as pastas por ordem de exercícios, iniciando nessa sequência:
 1.“script_ex1”					     	      
-- ex1_1.py 
-- ex1_2.py    
-- ex1_3.py
+- ./script_ex1/ex1_1.py 
+- ./script_ex1/ex1_2.py    
+- ./script_ex1/ex1_3.py
 
 2.“script_ex2”
-- ex2_1.py 
-- ex2_2.py    
-- ex2_3.py
+- ./script_ex2/ex2_1.py 
+- ./script_ex2/ex2_2.py    
+- ./script_ex2/ex2_3.py
 
-# 2ª →Rodando diretamente o arquivo MAIN.PY presente na raiz do projeto 
+
+2ª →Rodando diretamente o arquivo MAIN.PY presente na raiz do projeto 
 (este arquivo serve para juntar todas as etapas anteriores em apenas um, facilitando sua utilização) 
 
 
@@ -84,9 +85,13 @@ Executar os arquivos da pasta → *“Script PostgreSQL”* → *“script.sql�
 
 Isso irá criar as tabelas necessárias para interpretação do banco de dados:
 
-Feito isso, subiremos os dados para essas tabelas utilizando o arquivo carga_dados.py, presente na raiz do projeto, assim os dados selecionados estarão presentes nas tabelas respectivas.
+Feito isso, subiremos os dados para essas tabelas utilizando o arquivo **carga_dados.py**, presente na raiz do projeto, assim os dados selecionados estarão presentes nas tabelas respectivas.
+
+    Ajuste sua conexão com chave e senha na variavel **engine = create_engine**
+
 # Para filtrar as Querys no leitos de banco de dados:
 Pasta: *“Script postgreSQL”* → Arquivo: *“script_querys_1_2_3.sql”*
+
 
 - Query 1 - As 5 operadoras com maior crescimento percentual de despesas
 - Query 2 - Os 5 estados com maiores despesas totais.
@@ -95,26 +100,52 @@ Pasta: *“Script postgreSQL”* → Arquivo: *“script_querys_1_2_3.sql”*
 # Teste de API e interface WEB:
 **Certifique-se de que a dependência está instalada** 
 
-```pip install fastapi uvicorn sqlalchemy pandas psycopg2-binary```
+    pip install fastapi uvicorn sqlalchemy pandas psycopg2-binary
 
 **configure o banco de dados**
 
-Verifique a conexão no arquivo **ex4_1.py** (dentro da pasta script_ex4), e ajuste seu usuário/senha do PostgreSQL se necessário. 
-# Inicie o servidor:
-No diretório script_ex4 execute o comando
-```bash uvicorn ex4_1:app --reload```
+Verifique a conexão no arquivo **ex4_1.py** (dentro da pasta script_ex4) 
 
-O servidor estará rodando em: `http://127.0.0.1:8000` 
-**Documentação Interativa (Swagger):** `http://127.0.0.1:8000/docs`
+    Ajuste sua conexão com chave e senha na variavel **engine = create_engine**
+
+# Inicie o servidor:
+
+No diretório script_ex4 execute o comando
+
+
+     uvicorn ex4_1:app --reload
+
+
+**Documentação Interativa (Swagger):** 
+    O servidor estará rodando em:   
+   
+   
+     http://127.0.0.1:8000/docs 
+
+
 A interface web consome a API acima para exibir os dados. 
 -Em um novo terminal, vá para a raiz e acesse a pasta do frontend: 
-``cd frontend``
+    
+    
+    cd frontend
+
+
 -Instale as dependências: 
-```npm install ``` 
+  
+  
+    npm install 
+
+
 -Inicie a aplicação: 
-```npm run dev ``` 
+
+
+    npm run dev 
+
+
 -Acesse no navegador: 
-`http://localhost:5173`
+
+
+    http://localhost:5173
 
 # Tecnologias e dependências (Frameworks):
 **Processamento de Dados (ETL):**

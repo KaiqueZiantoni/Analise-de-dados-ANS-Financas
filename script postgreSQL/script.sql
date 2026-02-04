@@ -22,11 +22,6 @@ CREATE TABLE public.despesas_consolidadas (
 );
 CREATE INDEX idx_despesas_registro ON public.despesas_consolidadas USING btree (registro_ans);
 
-
-ALTER TABLE public.despesas_consolidadas ADD CONSTRAINT fk_operadora_despesa FOREIGN KEY (registro_ans) REFERENCES public.operadoras_cadastro(registro_ans);
-
-
-
 CREATE TABLE public.operadoras_cadastro (
 	registro_ans int4 NOT NULL,
 	cnpj varchar(20) NOT NULL,
@@ -36,3 +31,5 @@ CREATE TABLE public.operadoras_cadastro (
 	CONSTRAINT operadoras_cadastro_pkey PRIMARY KEY (registro_ans)
 );
 CREATE INDEX idx_operadora_cnpj ON public.operadoras_cadastro USING btree (cnpj);
+
+ALTER TABLE public.despesas_consolidadas ADD CONSTRAINT fk_operadora_despesa FOREIGN KEY (registro_ans) REFERENCES public.operadoras_cadastro(registro_ans);

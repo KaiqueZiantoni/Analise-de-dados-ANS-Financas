@@ -56,7 +56,7 @@ def executar():
     df_final = df[mask_total].copy()
     df_quarentena = df[~mask_total].copy()
 
-    df_final.to_csv('output/consolidado_despesas.csv"', index=False, encoding='utf-8-sig')
+    df_final.to_csv('output/consolidado_despesas.csv', index=False, encoding='utf-8-sig')
     df_quarentena.to_csv('output/quarentena_erros.csv', index=False, encoding='utf-8-sig')
 
     print(f"\n--- Relatório Final ---")
